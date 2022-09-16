@@ -42,7 +42,17 @@ public class SkillMillThree {
         System.out.println("Easy");
     }
     static void Q7() {
-        System.out.println("Easy");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("How many eggs do you want to buy?");
+        int egg = scanner.nextInt();
+        if (egg < 100) {
+            System.out.println("Each egg will be $0.25");
+            System.out.println(egg*0.25 + "$ Total");
+            
+        } else {
+            System.out.println("Each egg will be $0.20");
+            System.out.println(egg*0.2 + "$ Total");
+        }
     }
     static void Q8() {
         System.out.println("Easy");
